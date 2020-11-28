@@ -28,6 +28,7 @@
             border: 2px solid #89bb12;
             margin: 0 auto;
             perspective: 1000px;
+            perspective-origin: center;
         }
         #div3{
             background-color: rgba(121, 81, 81, 0.858);
@@ -40,6 +41,35 @@
         #div2:hover #div3{
             transform: rotateY(180deg);
         }
+        .product{
+            width: 350px;
+            /* height: 250px; */
+            border: 2px solid #fb3499;
+            margin: 20px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .pro-img{
+            width: 350px;
+            height: 350px;
+        }
+        .pro-img img{
+            width: 100%;
+            height: 100%;
+        }
+        .pro-desc{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(221, 159, 159, 0.336);
+            padding: 10px;
+            color: #fff;
+            transition: all .5s;
+            transform: translateY(100%);
+        }
+        .product:hover .pro-desc{
+            transform: translateY(0);
+        }
     </style>
 </head>
 <body>
@@ -49,6 +79,17 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde natus veniam saepe explicabo enim ipsam dolore exercitationem. Expedita odio explicabo laudantium cum distinctio non doloribus at culpa ad doloremque architecto accusamus, nisi corrupti dolores adipisci, similique praesentium? Veniam, voluptatum modi tenetur cumque provident, perspiciatis vitae maxime fuga temporibus reiciendis qui?
             Numquam maxime iste expedita alias quaerat, nulla nobis tenetur magni voluptate cum consequatur ullam natus praesentium accusamus vel eligendi quisquam neque repellat accusantium suscipit sint autem cupiditate voluptatum. Autem quae sequi reprehenderit sed odio eius consequatur modi expedita. Doloremque accusamus aperiam repellendus quas quia expedita quisquam assumenda voluptates obcaecati maxime?
 
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="product">
+            <div class="pro-img">
+                <img src="img\city3.jpg" alt="">
+            </div>
+            <div class="pro-desc">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis repellat amet praesentium soluta unde sint accusamus reiciendis esse consequatur laudantium.
+            </div>
         </div>
     </div>
 </body>
